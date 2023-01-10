@@ -1,0 +1,15 @@
+[package]
+name = "seeder"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+fake = { version = "2.5", features = ['chrono'] }
+clap = { version = "3.2.6", features = ["derive"] }
+rand = "0.8.5"
+futures = "0.3.21"
+tokio = { version = "1", features = ["full"] }
+sqlx = { version = "0.6", features = [ "runtime-tokio-rustls", "mysql", "chrono" ] }
+anyhow = "1.0.68"
